@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temaapp.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+
+<body onLoad="MM_preloadImages('imagenes/repre.jpeg')">
+<div data-role="page" id="principal" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="a">
+
+ <center><h1>Batalla del cinco de mayo</h1></center>
+
+</div>
+<div>
+
+      <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Origen de la batalla</h1>
+  <div>
+  <p>En México el 5 de Mayo se conmemora el día de la Batalla de Puebla, en la cual el ejército mexicano venció al ejército francés.
+La historia narra que todo comenzó hacia el año de 1862. Benito Juárez quien recientemente había sido elegido Presidente de México, suspendió los pagos de la deuda externa por dos años, ya que el país tenía una crisis financiera; así los franceses, españoles e ingleses vinieron a México con el fin de cobrarse a la fuerza la deuda.</p>
+<center><img src="imagenes/disc.jpg" width="250" height="250"></center>
+<p>
+Pero los ingleses y los españoles se marcharon sin conseguir nada, en contraste los franceses no pensaban irse hasta haber triunfado, ya que Napoleón III pensaba establecer en México una monarquía favorable para Francia.</p>
+<center><p><strong><em>Aqui te dejo un documental de discovery chanel</em></strong></p></center>
+<center><iframe width="80%" height="50%" src="https://www.youtube.com/embed/9fbrW_8R4Pw" frameborder="0" allowfullscreen></iframe></center>
+  </div>
+          <div><center></center>
+          </div>
+         
+      
+   </div>
+   </div>
+ 
+<!--foto del popo deslizble--->
+
+    <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-c">
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Personajes importantes de la batalla</h2>
+    </a>
+    </li>
+ 
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Desarrollo de la batalla</h2>
+    </a>   
+    </li>
+    
+    
+    
+     <li class="ui-first-child ui-last-child">
+    <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Conclusion</h2>
+    </a>   
+    </li>
+    
+    
+    
+    
+    
+    <li class="ui-first-child ui-last-child">
+       <a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Que paso el 4 de mayo</h2>
+       </a>
+       </li>
+       
+       
+     
+   
+      
+       <!----------------------------------------------------------------->
+      <li class="ui-first-child ui-last-child">
+       <a href="#paginacolap" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Como se celebra</h2>
+       </a>
+       </li>
+        <!----------------------------------------------------------------->
+ 
+       
+       
+    <li class="ui-first-child ui-last-child">
+       <a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Lugar donde se  desarrollo la batalla</h2>
+       </a>
+       </li>
+       </ul>
+    
+    
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion siete</h4>
+       <h4>Ulises Alvarez Corio</h4>
+       </div>
+       </div>
+       </div>
+       </div>
+       
+       
+       
+            
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Personages que participaron</h1>
+      </div>
+      <ul>
+        <li>
+          <center>
+            <strong>Benito Juarez</strong></center>
+        </li>
+      </ul>
+      <center><img src="imagenes/Juarez.jpg" width="208" height="136"></center>
+      <p>Entre los años de 1862 y 1867, sostiene de forma admirable el gobierno mexicano contra conservadores y francés, aun cuando andaba peregrinando entre México y Estados Unidos. Fue en esta época que sucede la Batalla de Puebla, lucha de la cual el Ejército Mexicano sale victorioso comandados por el Gral. Ignacio Zaragoza.</p>
+      <hr>
+      <ul>
+        <li>
+          <center>
+            <strong>Ignacio Mejia Álvarez</strong></center>
+        </li>
+      </ul>
+      <center><img src="imagenes/igna.jpg" width="275" height="183"></center>
+      <p>Durante la Segunda Intervención Francesa, fue Jefe de la División Oaxaca y participó en la heroica Batalla de Puebla al lado del Gral. Ignacio Zaragoza, teniendo como trinchera el Fuerte de Guadalupe.
+
+Para mayo de 1862 fue designado Gobernador Militar de Puebla, cargo que ocupó hasta marzo de 1863. Posteriormente durante el Sitio de Puebla, acción militar emprendida entre el 16 de marzo y el 17 de mayo de 1863, fue aprehendido y enviado a Franciaen donde estuvo prisionero. Casi un año después, en julio de 1864 logra fugarse y regresa México en octubre de 1865, incorporándose a las fuerzas liberales en Paso del Norte.
+      </p>
+      <hr>
+      <ul>
+        <li>
+          <center>
+            <strong>Porfirio Díaz</strong></center>
+        </li>
+      </ul>
+   <center>   <img src="imagenes/porfi.jpg" width="300" height="203"></center>
+     <p> Su participación en la Batalla de Puebla el 5 de mayo se dio al defender el ala izquierda de la ciudad y repeliendo en dos ocasiones el ataque francés. Una vez que huyeron los franceses, González Ortega y Porfirio Díaz se dieron a la tarea de perseguirlos, hasta que Zaragoza se los impidió. Ese mismo día, Juárez recibió una carta de Zaragoza mencionándole los detalles de la batalla, y haciendo hincapié en "el empeño y bizarría del ciudadano general don Porfirio Díaz".
+
+Sin duda, es un personaje de suma importancia en la historia de México, al ocupar el cargo de Presidente de México, en siete ocasiones; la primera del 5 de mayo de 1877 al 30 de noviembre de 1880. Posteriormente ocupó la presidencia para los periodos: 1884-1888, 1888-1892, 1892-1896,1896-1900,1900-1904,1904-1910. Su periodo de gobierno llevó el nombre de Porfiriato.
+      </p>
+      <hr>
+      <ul>
+        <li>
+          <center>
+            <strong>Ignacio Zaragoza</strong></center>
+        </li>
+      </ul>
+      <center><img src="imagenes/zarag.png" width="220" height="246"></center>
+      <p>Al amanecer del 5 de mayo de 1862, el Gral. Ignacio Zaragoza arenga a sus soldados: "Nuestros enemigos son los primeros soldados del mundo, pero vosotros sois los primeros hijos de México y os quieren arrebatar vuestra patria". Ordena a Miguel Negrete dirigir la defensa por la izquierda; a Felipe Berriozábal por la derecha y a Porfirio Díaz que esté junto a él. Tras varias horas de lucha, la batalla no se decide, se enfrentan cuerpo a cuerpo mexicanos y franceses, finalmente, los invasores se retiran mientras Zaragoza grita: "Tras ellos, a perseguirlos, el triunfo es nuestro".El ejército francés considerado el mejor del mundo en ese tiempo, un ejército profesional, con la fama de haber ganado batallas en Argelia (Legión Extranjera) y de haber entrado al río Mekong en la Indochina Francesa (hoy Vietnam), al mando del General Conde de Lorencez, era derrotado estrepitosamente. </p>
+      <hr>
+      <ul>
+        <li>
+          <center>
+            <strong>Miguel Negrete</strong>
+          </center>
+        </li>
+      </ul>
+      <center><img src="imagenes/miguel.jpg" width="220" height="293"></center>
+      <p>Unido al ejército republicano y a las órdenes del general Ignacio Zaragoza, ambos se cubren de gloria en la Batalla de Las Cumbres y en la Batalla de Puebla el 5 de mayo de 1862, llegando a ser considerado como el segundo héroe de dicha batalla al defender el Fuerte de Loreto, al respecto Ernesto de la Torre comenta:</p>
+      <hr>
+  
+      
+      
+    <div data-role="content" align="center">
+    <div>
+
+
+
+ </div>
+       </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion siete</h4>
+       <h4>Ulises Alvarez Corio</h4>
+       </div>
+       </div>
+      </div>
+      </div> 
+      
+      
+      
+      
+      
+      
+      
+         
+<!----------------------------------------------------------------->
+      <div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Desarrollo de la batalla</h1>
+      </div>
+    <div data-role="content" align="center">
+    <div>
+    <!-------visor--------->
+    <!-- Start WOWSlider.com -->
+<center><iframe src="visord/indexdesarrollo.html" style="width:490px;height:370px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe></center>
+<!-- End WOWSlider.com -->
+
+    
+    
+    
+<p>Durante 1861, el país estaba en bancarrota debido a medio siglo de conflictos y guerras casi constantes. No podía hacer frente ni a las necesidades más urgentes, por lo que el 17 de julio de 1861, el presidente Benito Juárez decretó prórroga de dos años para pagar deuda externa a países europeos. En octubre de 1861, Francia, Inglaterra y España se suscribieron a la Convención de Londres y se comprometieron a enviar militares a México para reclamar sus derechos como acreedores por una deuda que ascendía alrededor de 80 millones de pesos. Aproximadamente 69 millones eran para los ingleses, 9 millones para los españoles y 2 millones para Francia. Se negaron a negociar, por la vía diplomática, los términos y condiciones en los que se pagaría la deuda posteriormente. Así que Napoleón III, gobernante de Francia, decidió invadir México para establecer una monarquía favorable a Europa, surtirse de materias primas y en un futuro extender su imperialismo a Estados Unidos. Con ese fin, debía disolver el Gobierno mexicano establecido por el Presidente Benito Juárez.
+
+En abril de 1862 los franceses desembarcaron en el puerto de Veracruz, y emprendieron la campaña militar hacia el centro de la República. Después de varios ataques y cientos de muertos el 5 de mayo de 1862 fue la batalla victoriosa que tuvo lugar en los alrededores de una iglesia usada como fortaleza en Acultzingo, en el límite de los estados de Veracruz y Puebla. El héroe de la primera batalla de Puebla fue el general Ignacio Zaragoza al mando de casi 2000 soldados y 2700 campesinos usando machetes, rifles tipo "mausser" y lanzas llamadas "chinacas" de madera con punta de metal. Los franceses usaban pistolas, carabinas tipo winchester con punta de metal, bayonetas, cañones y ametralladoras de 15 kg y de 1.50 mt. longitud. El informe que el general Zaragoza rindió sobre la Batalla de Puebla al Presidente Benito Juárez fue breve y significativo.</p>
+<center><img src="imagenes/Juarez.jpg"></center>
+<p>
+"<em>Las armas nacionales se han cubierto de gloria. Las tropas francesas se portaron con valor en el combate y su jefe con soberbia, necedad y torpeza.</em>"
+
+La primera victoria de México no duró mucho tiempo. Un año después, treinta y cinco mil tropas francesas lograron derrotar al ejército mexicano, y de esa forma Francia logró tomar control de la Ciudad de México e impusieron al austriaco Maximiliano de Habsburgo y su esposa Carlota como emperador y emperatriz de México. El emperador no sostuvo por mucho su imperio: la victoria de Francia duró sólo 3 años. En 1867, y debido a la conflictiva situación en Europa y a la presión de Estados Unidos, el emperador Napoleón III ordenó retirar el apoyo militar y económico a Maximiliano. Al mismo tiempo los republicanos mexicanos comenzaron a recibir respaldo financiero y diplomático estadounidense al concluir en aquel país la Guerra de Secesión, y el novel imperio comenzó a perder su endeble base social. Así las cosas, durante 1866 los republicanos fueron ganando importantes posiciones hasta dejar reducida el área de influencia imperial a Puebla y Veracruz. El 2 de abril de 1867, tropas encabezadas por el juarista Porfirio Díaz tomaron la ciudad de Puebla con lo que militarmente el imperio fue aniquilado. El emperador Maximiliano, para entonces sitiado en Querétaro, fue hecho prisionero y fusilado en un lugar llamado "El Cerro de las Campanas".</p>
+
+
+       
+       </div>
+       </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion siete</h4>
+       <h4>Ulises Alvarez Corio</h4>
+       </div>
+       </div>
+      </div>
+      </div>
+       <!----------------------------------------------------------------->
+      
+      
+       <div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Conclusion de la batalla</h1>
+      </div>
+    <div data-role="content" align="center">
+    <div>
+    <center><p>Como termino la batalla</p></center>
+    <img src="imagenes/vivam.jpg" width="292" height="200">
+ <p>Las tropas francesas estaban muy bien equipadas y eran mucho más grandes que el ejercito Mexicano; por lo que Benito Juárez convocó a toda la población a que luchara, así se formó un ejército de aproximadamente 4800 hombres. 
+Fue el 5 de Mayo de 1862 cuando el General Laurencez al mando de las tropas francesas ordenó el asalto a los fuertes de Loreto y Guadalupe, que defendían la ciudad de Puebla al mando del General Ignacio Zaragoza; el ejercito invasor que fue rechazado con grandes pérdidas al intentar repetidas veces tomar las fortificaciones, al final tuvieron que abandonar el campo y retirarse vencidos y perseguidos por la caballería mexicana. 
+Finalmente, el ejército francés fue derrotado y el general Ignacio Zaragoza, mandó un mensaje telegráfico al presidente Juárez, que decía “Las armas nacionales se han cubierto de gloria”
+La Batalla de Puebla simboliza el espíritu de lucha y el amor a la independencia que caracteriza el pueblo mexicano. Actualmente éste día se celebra realizando ceremonias cívicas, en muchas ciudades se realizan desfiles. y también es costumbre representar la lucha de ése día con gente personificada tanto de mexicanos como franceses.</p>
+
+
+
+</div>
+       </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion siete</h4>
+       <h4>Ulises Alvarez Corio</h4>
+       </div>
+       </div>
+      </div>
+      </div>
+     
+  
+   <!----------------------------------------------------------------->
+  
+   <div data-role="page" id="paginacolap" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Como se celebra</h1>
+      </div>
+    <div data-role="content" align="center">
+    <div>
+   <!--COLAP-->
+          <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Desfile</h1>
+          <div>
+<p>El desfile del 5 de mayo es una de las tradiciones más grandes de nuestra ciudad en la que se conmemora la Batalla de Puebla de 1862. En esta fiesta poblana desfilarán más de 7 mil personas, divididas entre contingente militares y civiles.</p>
+<img src="imagenes/desf.jpg" width="170" height="253">
+<p>
+El Desfile del 5 de Mayo, que se organiza con las Secretarías de la Defensa Nacional y de Marina, a través de la 25 Zona Militar, contará con la participación de más de seis mil personas, entre militares, actores, estudiantes, docentes, tetelenses, xochiapulcas y zacapoaxtlas.</p>
+<img src="imagenes/aviodes.jpg" width="170" height="163">
+<p>
+
+Asimismo, formarán parte de este acto el contingente de las fuerzas armadas y 18 carros alegóricos con diferentes temas, que dan cuenta de varios momentos de la historia de México.  Además, se considera  que a lo largo del recorrido, habrá más 30 mil espectadores</p>
+
+
+<a href="http://www.todopuebla.com/eventos/desfiledel5demayoenpuebla">Enlace para informacion acerca del desfile</a>
+
+
+          </div>
+          
+          
+   </div>
+   </div>
+  
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>5 De mayo en estados unidos</h1>
+          <div><p><strong>Tiene relación con Texas</strong></p></div>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/5may.jpg',0)"><img src="imagenes/celeb.jpg" width="300" height="150" id="Image19"></a>
+<div>
+  <p>
+
+Zaragoza nació en lo que hay es Goliad, Texas, a unos 10 kilómetros al norte de Corpus Christi. En 1999, el Senado de Texas lo declaró el lugar oficial para celebrar el Cinco de Mayo.
+
+Y vaya que se celebra: hay música en vivo, bailes folklóricos y parrilladas. También hay una fiesta gigante en el recinto ferial de Goliad.
+
+"Le ha abierto la perspectiva a Goliad. Es algo de lo que todos nos enorgullecemos. Es una de las razones por la que esperamos que nuestros jóvenes sigan con la tradición", dijo Emilio Vargas, ex juez de paz, al diario Victoria Advocate de Texas en 2014.</p>
+
+
+          
+        </div>
+          
+          
+   </div>
+   </div>
+  
+<!--COLAP-->
+   <!--COLAP-->
+   </div>
+   </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion siete</h4>
+       <h4>Ulises Alvarez Corio</h4>
+       </div>
+       </div>
+      </div>
+      
+<!--   FIN    COLAP-->
+
+       
+ 
+  
+   <!----------------------------------------------------------------->
+  
+      <div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Que paso el 4 de mayo</h1>
+      </div>
+    <div data-role="content" align="center">
+    <div>
+    <center><p> <strong><em>La batalla de atlixco</em></strong><em></em></p></center>
+<p>La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.</p>
+<img src="imagenes/batlix.jpg" width="280" height="162">
+<p>
+Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla.</p>
+
+
+      
+    </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion siete</h4>
+       <h4>Ulises Alvarez Corio</h4>
+       </div>
+       </div>
+       </div>
+      </div>
+   
+      
+      
+      
+      
+      
+      
+      
+       <!----------------------------------------------------------------->
+      
+      
+      
+  <div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Lugar donde se desarrollo la batalla</h1>
+      </div>
+    <div data-role="content" align="center">
+    <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/repre.jpeg',1)"><img src="imagenes/marcha.jpg" width="270" height="197" id="Image22"></a>
+<p>La batalla de Puebla fue un combate librado el 5 de mayo de 1862 en las cercanías de la ciudad de Puebla.
+</p>
+ 
+<center> <img src="imagenes/maque.jpg" width="250" height="106">
+ <img src="imagenes/fort.png" width="280" height="231">
+ 
+ 
+ </center>
+ 
+ 
+       </div>
+       </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion siete</h4>
+       <h4>Ulises Alvarez Corio</h4>
+       </div>
+       </div>
+      </div>
+     
+    <!----------------------------------------------------------------->  
+
+           
+ </body>
+</html>
